@@ -11,6 +11,7 @@
    - Display list of servers as a drop-down list or similar
    - Once a particular server has been selected display a line graph for the values.
    - Also include summary of lowest, highest and average value in the set
+   - Some basic PHP code, or relevent solution will be apprciate to resolve cross-origin conflict 
 
 3. The exercise should be completed using:
    - Use Javascript framework, preferably using VueJS framework
