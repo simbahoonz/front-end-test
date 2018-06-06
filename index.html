@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="JBATestApp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0001"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>JBA Test</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="LineChart.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-chart/2.0.28/LineChart.min.css">
+<script src="app.js"></script>
+<style>
+</style>    
+</head>
+<body ng-controller="JbaTestCtrl as jbatest">
+    <div class="bkground"></div>
+    <select name="siteSelect" id="siteSelect" ng-options="option.name for option in sites track by option.id" ng-model="selected" ng-change="sitechange()">
+    </select>
+    
+    <div class="siteDataChart"><linechart data="data" options="options"></linechart></div>
+</body>
+</html>
